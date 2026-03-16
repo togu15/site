@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets — Projets & Expérimentations</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">
+        <div class="logo-icon">⌘</div>
+        <span>Projets & Exp.</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="ressources.html">Ressources</a></li>
+        <li><a href="lab.html">Lab</a></li>
+        <li><a href="medias.html">Médias</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <span class="label fade-up">Base de projets</span>
+      <h1 class="fade-up stagger-1">Projets</h1>
+      <p class="fade-up stagger-2">Explorez l'ensemble des projets par thématique, statut ou date.</p>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top: var(--s-xl);">
+    <div class="container">
+
+      <!-- Filters -->
+      <div class="filter-bar fade-up">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="pedagogie">Pédagogie</button>
+        <button class="filter-btn" data-filter="innovation">Innovation</button>
+        <button class="filter-btn" data-filter="prototype">Prototypes</button>
+        <button class="filter-btn" data-filter="numerique">Numérique</button>
+        <button class="filter-btn" data-filter="media">Médias</button>
+        <button class="filter-btn" data-filter="creatif">Créatif</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="grid-3">
+
+        <div class="project-card fade-up visible" data-category="innovation" style="--card-accent: var(--c-tag-innovation);">
+          <span class="card-tag tag-innovation">Innovation agricole</span>
+          <h3 class="card-title">ACTIFE — Autonomie fourragère</h3>
+          <p class="card-description">Projet territorial visant à renforcer l'autonomie fourragère des élevages herbagers du Massif Central par l'expérimentation et l'accompagnement technique.</p>
+          <div class="card-meta">
+            <span class="card-status"><span class="status-dot status-active"></span> En cours</span>
+            <a href="projet-detail.html" class="card-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-up visible" data-category="prototype" style="--card-accent: var(--c-tag-prototype);">
+          <span class="card-tag tag-prototype">Prototype</span>
+          <h3 class="card-title">Station météo low-tech</h3>
+          <p class="card-description">Conception d'une station météo connectée à partir de composants accessibles pour le suivi de parcelles en élevage herbager.</p>
+          <div class="card-meta">
+            <span class="card-status"><span class="status-dot status-prototype"></span> Prototype</span>
+            <a href="projet-detail.html" class="card-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-up visible" data-category="pedagogie" style="--card-accent: var(--c-tag-pedagogy);">
+          <span class="card-tag tag-pedagogy">Pédagogie</span>
+          <h3 class="card-title">AgriFabLab pédagogique</h3>
+          <p class="card-description">Mise en place d'un espace de fabrication numérique au sein d'un établissement agricole pour les apprenants et formateurs.</p>
+          <div class="card-meta">
+            <span class="card-status"><span class="status-dot status-active"></span> En cours</span>
+            <a href="projet-detail.html" class="card-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-up visible" data-category="numerique" style="--card-accent: var(--c-tag-numeric);">
+          <span class="card-tag tag-numeric">Numérique</span>
+          <h3 class="card-title">Plateforme de ressources pédagogiques</h3>
+          <p class="card-description">Développement d'une interface web interactive pour centraliser les supports de formation et les fiches pédagogiques agricoles.</p>
+          <div class="card-meta">
+            <span class="card-status"><span class="status-dot status-active"></span> En cours</span>
+            <a href="projet-detail.html" class="card-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-up visible" data-category="innovation" style="--card-accent: var(--c-tag-innovation);">
+          <span class="card-tag tag-innovation">Innovation agricole</span>
+          <h3 class="card-title">Suivi pâturage tournant</h3>
+          <p class="card-description">Outil d'aide à la décision pour la gestion du pâturage tournant dynamique en système herbager, basé sur des indicateurs terrain.</p>
+          <div class="card-meta">
+            <span class="card-status"><span class="status-dot status-prototype"></span> Prototype</span>
+            <a href="projet-detail.html" class="card-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-up visible" data-category="media" style="--card-accent: var(--c-tag-media);">
+          <span class="card-tag tag-media">Médias</span>
+          <h3 class="card-title">Série vidéo — Paroles d'éleveurs</h3>
+          <p class="card-description">Réalisation d'une série de portraits vidéo d'éleveurs herbagers du Massif Central, valorisant leurs pratiques et leur savoir-faire.</p>
+          <div class="card-meta">
+            <span class="card-status"><span class="status-dot status-done"></span> Terminé</span>
+            <a href="projet-detail.html" class="card-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-up visible" data-category="pedagogie" style="--card-accent: var(--c-tag-pedagogy);">
+          <span class="card-tag tag-pedagogy">Pédagogie</span>
+          <h3 class="card-title">Séquence "Sol vivant"</h3>
+          <p class="card-description">Conception d'une séquence pédagogique complète sur le sol vivant, destinée aux apprenants en BTS agricole, combinant terrain et numérique.</p>
+          <div class="card-meta">
+            <span class="card-status"><span class="status-dot status-done"></span> Terminé</span>
+            <a href="projet-detail.html" class="card-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-up visible" data-category="prototype" style="--card-accent: var(--c-tag-prototype);">
+          <span class="card-tag tag-prototype">Prototype</span>
+          <h3 class="card-title">Capteur de niveau d'abreuvoir</h3>
+          <p class="card-description">Prototype d'un capteur ultrason connecté pour surveiller à distance le niveau d'eau des abreuvoirs en parcelles.</p>
+          <div class="card-meta">
+            <span class="card-status"><span class="status-dot status-prototype"></span> Prototype</span>
+            <a href="projet-detail.html" class="card-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="project-card fade-up visible" data-category="creatif" style="--card-accent: var(--c-tag-creative);">
+          <span class="card-tag tag-creative">Créatif</span>
+          <h3 class="card-title">Podcast "Champs libres"</h3>
+          <p class="card-description">Podcast mensuel explorant les pratiques agricoles innovantes, les démarches pédagogiques et les initiatives de terrain.</p>
+          <div class="card-meta">
+            <span class="card-status"><span class="status-dot status-active"></span> En cours</span>
+            <a href="projet-detail.html" class="card-link">Voir →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-text">© 2025 Projets & Expérimentations — Massif Central</span>
+        <ul class="footer-links">
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

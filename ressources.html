@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ressources — Projets & Expérimentations</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">
+        <div class="logo-icon">⌘</div>
+        <span>Projets & Exp.</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="ressources.html">Ressources</a></li>
+        <li><a href="lab.html">Lab</a></li>
+        <li><a href="medias.html">Médias</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <span class="label fade-up">Bibliothèque</span>
+      <h1 class="fade-up stagger-1">Ressources</h1>
+      <p class="fade-up stagger-2">Fiches pédagogiques, supports de formation, documents techniques et méthodologiques.</p>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top: var(--s-xl);">
+    <div class="container">
+
+      <div class="filter-bar fade-up">
+        <button class="filter-btn active" data-filter="all">Toutes</button>
+        <button class="filter-btn" data-filter="pedagogie">Pédagogie</button>
+        <button class="filter-btn" data-filter="agriculture">Agriculture</button>
+        <button class="filter-btn" data-filter="numerique">Numérique</button>
+        <button class="filter-btn" data-filter="methodologie">Méthodologie</button>
+      </div>
+
+      <!-- Pédagogie -->
+      <div style="margin-bottom: var(--s-2xl);">
+        <h3 class="fade-up" style="margin-bottom: var(--s-lg);">Pédagogie</h3>
+        <div style="display: flex; flex-direction: column; gap: var(--s-md);">
+          <div class="resource-card fade-up" data-category="pedagogie">
+            <div class="resource-icon">📄</div>
+            <div class="resource-info">
+              <h4>Fiche séquence — Sol vivant</h4>
+              <p>Séquence complète pour BTS agricole sur la biologie des sols</p>
+            </div>
+            <span class="resource-type">PDF</span>
+          </div>
+          <div class="resource-card fade-up" data-category="pedagogie">
+            <div class="resource-icon">📋</div>
+            <div class="resource-info">
+              <h4>Questionnaire d'évaluation terrain</h4>
+              <p>Grille d'observation et d'évaluation pour les sorties pédagogiques sur parcelles</p>
+            </div>
+            <span class="resource-type">PDF</span>
+          </div>
+          <div class="resource-card fade-up" data-category="pedagogie">
+            <div class="resource-icon">📚</div>
+            <div class="resource-info">
+              <h4>Support de formation — Pâturage tournant</h4>
+              <p>Diaporama et notes pour une journée de formation sur le pâturage dynamique</p>
+            </div>
+            <span class="resource-type">PPTX</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agriculture -->
+      <div style="margin-bottom: var(--s-2xl);">
+        <h3 class="fade-up" style="margin-bottom: var(--s-lg);">Agriculture</h3>
+        <div style="display: flex; flex-direction: column; gap: var(--s-md);">
+          <div class="resource-card fade-up" data-category="agriculture">
+            <div class="resource-icon">🌱</div>
+            <div class="resource-info">
+              <h4>Fiche technique — Mélanges prairiaux</h4>
+              <p>Guide de composition des mélanges prairiaux pour systèmes herbagers</p>
+            </div>
+            <span class="resource-type">PDF</span>
+          </div>
+          <div class="resource-card fade-up" data-category="agriculture">
+            <div class="resource-icon">📊</div>
+            <div class="resource-info">
+              <h4>Protocole de suivi parcellaire</h4>
+              <p>Méthode de suivi de la pousse de l'herbe et du chargement animal</p>
+            </div>
+            <span class="resource-type">PDF</span>
+          </div>
+          <div class="resource-card fade-up" data-category="agriculture">
+            <div class="resource-icon">📈</div>
+            <div class="resource-info">
+              <h4>Compte rendu ACTIFE — Année 1</h4>
+              <p>Synthèse des résultats de la première année du projet territorial</p>
+            </div>
+            <span class="resource-type">PDF</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Numérique -->
+      <div style="margin-bottom: var(--s-2xl);">
+        <h3 class="fade-up" style="margin-bottom: var(--s-lg);">Numérique & technique</h3>
+        <div style="display: flex; flex-direction: column; gap: var(--s-md);">
+          <div class="resource-card fade-up" data-category="numerique">
+            <div class="resource-icon">🔧</div>
+            <div class="resource-info">
+              <h4>Guide — Station météo Arduino</h4>
+              <p>Documentation technique pour la réalisation d'une station météo low-tech</p>
+            </div>
+            <span class="resource-type">PDF</span>
+          </div>
+          <div class="resource-card fade-up" data-category="numerique">
+            <div class="resource-icon">🤖</div>
+            <div class="resource-info">
+              <h4>Collection de prompts IA — Agriculture</h4>
+              <p>Sélection de prompts pour utiliser l'IA dans un contexte agricole et pédagogique</p>
+            </div>
+            <span class="resource-type">MD</span>
+          </div>
+          <div class="resource-card fade-up" data-category="numerique">
+            <div class="resource-icon">💻</div>
+            <div class="resource-info">
+              <h4>Modèle de fiche projet</h4>
+              <p>Template réutilisable pour documenter un projet technique ou pédagogique</p>
+            </div>
+            <span class="resource-type">DOCX</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Méthodologie -->
+      <div style="margin-bottom: var(--s-2xl);">
+        <h3 class="fade-up" style="margin-bottom: var(--s-lg);">Méthodologie</h3>
+        <div style="display: flex; flex-direction: column; gap: var(--s-md);">
+          <div class="resource-card fade-up" data-category="methodologie">
+            <div class="resource-icon">🗺️</div>
+            <div class="resource-info">
+              <h4>Guide méthodologique — Projet territorial</h4>
+              <p>Cadre méthodologique pour mener un projet d'expérimentation territoriale</p>
+            </div>
+            <span class="resource-type">PDF</span>
+          </div>
+          <div class="resource-card fade-up" data-category="methodologie">
+            <div class="resource-icon">📝</div>
+            <div class="resource-info">
+              <h4>Trame de compte rendu d'expérimentation</h4>
+              <p>Modèle structuré pour la rédaction des résultats d'essais terrain</p>
+            </div>
+            <span class="resource-type">DOCX</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-text">© 2025 Projets & Expérimentations — Massif Central</span>
+        <ul class="footer-links">
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

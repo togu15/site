@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab — Projets & Expérimentations</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">
+        <div class="logo-icon">⌘</div>
+        <span>Projets & Exp.</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="ressources.html">Ressources</a></li>
+        <li><a href="lab.html">Lab</a></li>
+        <li><a href="medias.html">Médias</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <span class="label fade-up">Laboratoire</span>
+      <h1 class="fade-up stagger-1">Lab</h1>
+      <p class="fade-up stagger-2">Prototypes, expérimentations, capteurs et objets techniques. Un espace libre pour tester et documenter des idées.</p>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top: var(--s-xl);">
+    <div class="container">
+
+      <!-- Status legend -->
+      <div class="fade-up" style="display: flex; gap: var(--s-xl); margin-bottom: var(--s-2xl); flex-wrap: wrap;">
+        <span class="card-status"><span class="status-dot status-active"></span> En développement</span>
+        <span class="card-status"><span class="status-dot status-prototype"></span> Prototype fonctionnel</span>
+        <span class="card-status"><span class="status-dot status-done"></span> Idée / conception</span>
+      </div>
+
+      <div class="grid-3">
+
+        <div class="lab-card fade-up">
+          <span class="card-tag">Capteur</span>
+          <h4>Thermomètre 24h</h4>
+          <p>Enregistreur de température sur 24 heures avec affichage graphique embarqué. Basé sur Arduino Nano, capteur DS18B20 et écran OLED 0.96".</p>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--s-xs); margin-top: var(--s-md);">
+            <span class="tech-tag">Arduino</span>
+            <span class="tech-tag">DS18B20</span>
+            <span class="tech-tag">OLED</span>
+          </div>
+          <div class="lab-status">
+            <span class="status-dot status-prototype"></span> Prototype fonctionnel
+          </div>
+        </div>
+
+        <div class="lab-card fade-up">
+          <span class="card-tag">Électronique</span>
+          <h4>Testeur de clôture</h4>
+          <p>Outil de test portatif pour mesurer la tension des clôtures électriques en pâturage. Affichage LED simple et boîtier imprimé 3D.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--s-xs); margin-top: var(--s-md);">
+            <span class="tech-tag">Arduino</span>
+            <span class="tech-tag">LED</span>
+            <span class="tech-tag">3D Print</span>
+          </div>
+          <div class="lab-status">
+            <span class="status-dot status-active"></span> En développement
+          </div>
+        </div>
+
+        <div class="lab-card fade-up">
+          <span class="card-tag">Capteur</span>
+          <h4>Capteur de distance — Abreuvoir</h4>
+          <p>Capteur ultrason HC-SR04 pour mesurer le niveau d'eau dans les abreuvoirs. Envoi des données par LoRa vers une base de collecte.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--s-xs); margin-top: var(--s-md);">
+            <span class="tech-tag">HC-SR04</span>
+            <span class="tech-tag">LoRa</span>
+            <span class="tech-tag">ESP32</span>
+          </div>
+          <div class="lab-status">
+            <span class="status-dot status-done"></span> En conception
+          </div>
+        </div>
+
+        <div class="lab-card fade-up">
+          <span class="card-tag">Station</span>
+          <h4>Station météo low-tech</h4>
+          <p>Station météo de parcelle avec capteur de température, humidité, pluviomètre artisanal et anémomètre. Données stockées sur carte SD.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--s-xs); margin-top: var(--s-md);">
+            <span class="tech-tag">Arduino</span>
+            <span class="tech-tag">DHT22</span>
+            <span class="tech-tag">SD Card</span>
+          </div>
+          <div class="lab-status">
+            <span class="status-dot status-prototype"></span> Prototype fonctionnel
+          </div>
+        </div>
+
+        <div class="lab-card fade-up">
+          <span class="card-tag">Interface</span>
+          <h4>Dashboard parcellaire</h4>
+          <p>Interface web légère pour visualiser les données collectées par les capteurs terrain : graphiques, alertes et historique.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--s-xs); margin-top: var(--s-md);">
+            <span class="tech-tag">HTML/JS</span>
+            <span class="tech-tag">Chart.js</span>
+            <span class="tech-tag">API</span>
+          </div>
+          <div class="lab-status">
+            <span class="status-dot status-active"></span> En développement
+          </div>
+        </div>
+
+        <div class="lab-card fade-up">
+          <span class="card-tag">DIY</span>
+          <h4>Herbomètre numérique</h4>
+          <p>Herbomètre à plateau pour mesurer la hauteur d'herbe, équipé d'un capteur de distance et d'un écran pour lecture directe au champ.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--s-xs); margin-top: var(--s-md);">
+            <span class="tech-tag">Arduino</span>
+            <span class="tech-tag">VL53L0X</span>
+            <span class="tech-tag">LCD</span>
+          </div>
+          <div class="lab-status">
+            <span class="status-dot status-done"></span> En conception
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background: var(--c-bg-alt);">
+    <div class="container" style="text-align: center;">
+      <div class="fade-up">
+        <h3 style="margin-bottom: var(--s-md);">Une idée de prototype ?</h3>
+        <p style="color: var(--c-text-secondary); margin: 0 auto var(--s-xl);">
+          Le Lab est un espace ouvert. Si vous avez un besoin technique sur le terrain 
+          ou une idée d'objet à prototyper, n'hésitez pas à en discuter.
+        </p>
+        <a href="contact.html" class="btn btn-primary">
+          Proposer une idée <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-text">© 2025 Projets & Expérimentations — Massif Central</span>
+        <ul class="footer-links">
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/26037857/README.md)
 # Projets & Expérimentations
 
 Site vitrine pour documenter et valoriser des projets autour de la pédagogie agricole, l'innovation en élevage herbager, l'expérimentation technique et le numérique au service de l'agriculture.

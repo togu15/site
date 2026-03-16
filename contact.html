@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Projets & Expérimentations</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">
+        <div class="logo-icon">⌘</div>
+        <span>Projets & Exp.</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="ressources.html">Ressources</a></li>
+        <li><a href="lab.html">Lab</a></li>
+        <li><a href="medias.html">Médias</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <span class="label fade-up">Échanges</span>
+      <h1 class="fade-up stagger-1">Contact</h1>
+      <p class="fade-up stagger-2">Pour proposer une collaboration, partager une idée ou simplement échanger autour des projets.</p>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top: var(--s-xl);">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info fade-up">
+          <h3>Restons en contact</h3>
+          <p>
+            Ce site est un espace de partage et de collaboration. N'hésitez pas à prendre 
+            contact pour proposer un projet, partager une idée, demander une ressource 
+            ou simplement discuter autour des thématiques abordées.
+          </p>
+
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="contact-method-icon">✉️</div>
+              <div>
+                <div class="label">Email</div>
+                <span style="font-size: 0.92rem; font-weight: 500;">contact@projets-experimentations.fr</span>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-method-icon">🐙</div>
+              <div>
+                <div class="label">GitHub</div>
+                <span style="font-size: 0.92rem; font-weight: 500;">github.com/projets-exp</span>
+              </div>
+            </div>
+            <div class="contact-method">
+              <div class="contact-method-icon">📍</div>
+              <div>
+                <div class="label">Territoire</div>
+                <span style="font-size: 0.92rem; font-weight: 500;">Massif Central, France</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--s-2xl); padding: var(--s-lg); background: var(--c-accent-light); border-radius: var(--r-md);">
+            <h4 style="font-family: var(--f-body); font-weight: 600; font-size: 0.95rem; margin-bottom: var(--s-sm); color: var(--c-accent-dark);">
+              💡 Proposer un projet
+            </h4>
+            <p style="font-size: 0.88rem; color: var(--c-accent-dark); line-height: 1.6;">
+              Vous avez un besoin technique, une idée de prototype ou un projet pédagogique ? 
+              Utilisez le formulaire en indiquant "Proposition de projet" dans l'objet.
+            </p>
+          </div>
+        </div>
+
+        <div class="fade-up stagger-1">
+          <div style="background: var(--c-bg-card); border: 1px solid var(--c-border-light); border-radius: var(--r-lg); padding: var(--s-2xl);">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nom</label>
+                <input type="text" id="name" placeholder="Votre nom">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="votre@email.fr">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Objet</label>
+              <select id="subject">
+                <option value="">Choisir un objet…</option>
+                <option value="collaboration">Proposition de collaboration</option>
+                <option value="projet">Proposition de projet</option>
+                <option value="question">Question</option>
+                <option value="ressource">Demande de ressource</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Décrivez votre projet, votre idée ou votre demande…"></textarea>
+            </div>
+            <button class="btn btn-primary" style="width: 100%; justify-content: center;" onclick="handleSubmit()">
+              Envoyer le message <span class="arrow">→</span>
+            </button>
+            <p id="form-feedback" style="display: none; margin-top: var(--s-md); font-size: 0.88rem; text-align: center; color: var(--c-accent);"></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-text">© 2025 Projets & Expérimentations — Massif Central</span>
+        <ul class="footer-links">
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    function handleSubmit() {
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const feedback = document.getElementById('form-feedback');
+
+      if (!name || !email || !message) {
+        feedback.style.display = 'block';
+        feedback.style.color = 'var(--c-highlight)';
+        feedback.textContent = 'Merci de remplir tous les champs obligatoires.';
+        return;
+      }
+
+      // For GitHub Pages, this would need a service like Formspree, Netlify Forms, etc.
+      feedback.style.display = 'block';
+      feedback.style.color = 'var(--c-accent)';
+      feedback.textContent = '✓ Message envoyé ! Merci pour votre intérêt, je vous répondrai rapidement.';
+
+      // Reset form
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+      document.getElementById('subject').selectedIndex = 0;
+    }
+  </script>
+</body>
+</html>
