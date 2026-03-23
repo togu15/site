@@ -27,7 +27,7 @@ Site vitrine pour documenter et valoriser des projets autour de la pédagogie ag
 2. Pousser l'ensemble des fichiers
 3. Aller dans **Settings → Pages**
 4. Sélectionner la branche `main` et le dossier `/ (root)`
-5. Le site sera accessible à `https://votre-nom.github.io/nom-du-repo/`
+5. Le site sera accessible à `https://togu15.github.io/site/`
 
 ## Technologies
 
